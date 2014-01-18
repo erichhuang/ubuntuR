@@ -1,4 +1,4 @@
-# OFP API Setup
+# R installation 
 FROM    ubuntu
 
 # Variables
