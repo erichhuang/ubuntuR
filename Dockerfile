@@ -17,3 +17,8 @@ RUN     apt-get update && apt-get upgrade
 
 # Install R
 RUN     apt-get install r-base -y
+
+# Specify the CRAN mirror for R to use
+#   source: http://stackoverflow.com/a/8475208/1967630
+RUN	touch ~/.Rprofile
+CMD	["echo", "-e", "options(repos=structure(c(CRAN=\"$CRAN_MIRROR\")))"] >> ~/.Rprofile
