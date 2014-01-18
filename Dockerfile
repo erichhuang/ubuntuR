@@ -5,7 +5,7 @@ FROM    ubuntu
 ENV     CRAN_MIRROR "http://cran.cnr.Berkeley.edu"
 
 # Add cran mirror to package installer's sources list and update
-RUN     echo "\n# R cran mirror" >> /etc/apt/sources.list
+CMD	["echo", "-e", "\n# R cran mirror"] >> /etc/apt/sources.list
 RUN     echo "deb $CRAN_MIRROR/bin/linux/ubuntu precise/" >> /etc/apt/sources.list
 
 # Add the signed key
