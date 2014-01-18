@@ -9,7 +9,7 @@ RUN     echo -e "\n# R cran mirror" >> /etc/apt/sources.list
 RUN     echo -e "deb $CRAN_MIRROR/bin/linux/ubuntu precise/" >> /etc/apt/sources.list
 
 # Add the signed key
-RUN     apt-key --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+RUN     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 RUN     gpg -a --export E084DAB9 | sudo apt-key add -
 
 # Update & upgrade packages
