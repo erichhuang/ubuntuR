@@ -1,5 +1,5 @@
 # R installation 
-FROM    ubuntu
+FROM    ubuntu:12.04
 
 # Variables
 ENV     CRAN_MIRROR "http://cran.cnr.Berkeley.edu"
