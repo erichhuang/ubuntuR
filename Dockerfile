@@ -2,7 +2,7 @@
 FROM    ubuntu:12.04
 
 # Variables
-ENV     CRAN_MIRROR "http://cran.cnr.Berkeley.edu"
+ENV     CRAN_MIRROR http://cran.cnr.Berkeley.edu
 
 # Add cran mirror to package installer's sources list and update
 CMD	["echo", "-e", "\n# R cran mirror"] >> /etc/apt/sources.list
