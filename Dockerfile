@@ -2,6 +2,7 @@
 FROM    ubuntu:14.04
 
 # Variables
+ENV     DEBIAN_FRONTEND noninteractive
 ENV     CRAN_MIRROR http://watson.nci.nih.gov/cran_mirror/
 
 # Add cran mirror to package installer's sources list and update
