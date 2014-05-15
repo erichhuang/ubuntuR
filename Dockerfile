@@ -1,8 +1,8 @@
 # R installation 
-FROM    ubuntu:12.04
+FROM    ubuntu:14.04
 
 # Variables
-ENV     CRAN_MIRROR http://cran.cnr.Berkeley.edu
+ENV     CRAN_MIRROR http://watson.nci.nih.gov/cran_mirror/
 
 # Add cran mirror to package installer's sources list and update
 CMD	["echo", "-e", "\n# R cran mirror"] >> /etc/apt/sources.list
