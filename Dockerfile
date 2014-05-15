@@ -6,7 +6,7 @@ ENV     CRAN_MIRROR http://watson.nci.nih.gov/cran_mirror/
 
 # Add cran mirror to package installer's sources list and update
 CMD	["echo", "-e", "\n# R cran mirror"] >> /etc/apt/sources.list
-RUN     echo "deb $CRAN_MIRROR/bin/linux/ubuntu precise/" >> /etc/apt/sources.list
+RUN     echo "deb $CRAN_MIRROR/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
 
 # Add the signed key
 RUN     gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9
