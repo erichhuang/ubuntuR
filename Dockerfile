@@ -1,5 +1,6 @@
 # R installation 
 FROM    ubuntu:14.04
+MAINTAINER Erich S. Huang <erich.huang@duke.edu>
 
 # Variables
 ENV     DEBIAN_FRONTEND noninteractive
