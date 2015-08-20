@@ -1,5 +1,5 @@
 # R installation 
-FROM    ubuntu:14.04
+FROM    phusion/baseimage
 MAINTAINER Erich S. Huang <erich.huang@duke.edu>
 
 # Variables
