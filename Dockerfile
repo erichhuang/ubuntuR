@@ -7,7 +7,7 @@ ENV     DEBIAN_FRONTEND noninteractive
 ENV     CRAN_MIRROR http://watson.nci.nih.gov/cran_mirror/
 
 # Add cran mirror to package installer's sources list and update
-CMD	["echo", "-e", "\n# R cran mirror"] >> /etc/apt/sources.list
+RUN     echo "\n# R cran mirror" >> /etc/apt/sources.list
 RUN     echo "deb $CRAN_MIRROR/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
 
 # Add the signed key
